@@ -64,4 +64,4 @@ volumes:
   media-config:
 
 networks:
- default:
+  default:
