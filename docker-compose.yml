@@ -15,8 +15,8 @@ services:
     networks:
       - default
     ports:
-      - "137:137/udp" # required to advertise shares (NMBD)
-      - "138:138/udp" # required to advertise shares (NMBD)
+      # - "137:137/udp" # required to advertise shares (NMBD)
+      # - "138:138/udp" # required to advertise shares (NMBD)
       - "139:139/tcp" # default smb port
       - "445:445/tcp" # default smb port
     volumes:
