@@ -21,8 +21,6 @@ services:
       - "445:445/tcp" # default smb port
     volumes:
       - media-data:/mount
-      - ./smb.conf:/etc/samba/smb.conf
-      - ./smbpassword:/etc/samba/smbpassword
 
   # torrent:
   #   container_name: 'rtorrent'
