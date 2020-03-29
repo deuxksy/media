@@ -12,7 +12,7 @@ services:
       WORKGROUP: 'ZZIZILY'
       USERID: 1000
       GROUPID: 1000
-      SHARE: "media;/mount;yes;no;no;crom;'crom';'crom';'media"
+      SHARE: "media;/mount;yes;no;no;crom;'none';'none';'media"
     networks:
       - default
     ports:
