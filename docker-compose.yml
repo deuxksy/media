@@ -16,7 +16,7 @@ services:
       - 46000:46000
     volumes:
       - /home/media/config:/config
-      - /home/media/downloads:/downloads
+      - /home/media/downloads:/data
 
   dlna:
     container_name: 'minidlna'
