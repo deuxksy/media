@@ -42,6 +42,16 @@ docker run -it -p 139:139 -p 445:445 --name smb -d dperson/samba -p \
 
 ## [torrent](https://github.com/mondediefr/docker-rutorrent)
 
+로그인이 필수로 사용하기
+
+```bash
+docker exec -it rutorrent gen-http-passwd
+Username: ${username}
+Password: ${password}
+Verifying - Password: ${password}
+Password was generated for the http user: torrent
+```
+
 ## 남은일
 
 3개의 docker 를 단순 docker-compose 를 모았지만 이것를 실제 1개의 docker 파일로 만들어 보자
