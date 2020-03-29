@@ -12,6 +12,7 @@ services:
       WORKGROUP: 'ZZIZILY'
       USERID: 1000
       GROUPID: 1000
+      SHARE: "media;/mount;yes;no;no;crom;'crom';'crom';'media"
     networks:
       - default
     ports:
@@ -23,7 +24,7 @@ services:
       - media-data:/mount
 
   # torrent:
-  #   container_name: 'rtorrent'
+  #   container_name: 'rutorrent'
   #   image: mondedie/rutorrent:latest
   #   restart: always
   #   environment:
