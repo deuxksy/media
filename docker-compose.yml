@@ -8,7 +8,7 @@ services:
     restart: always
     environment:
       TZ: 'Asia/Seoul'
-      USER: "crom;qwe123"
+      USER: "${username};${password}"
       WORKGROUP: 'ZZIZILY'
       USERID: 1000
       GROUPID: 1000
