@@ -16,7 +16,7 @@ services:
       - 46000:46000
     volumes:
       - /home/media/config:/config
-      - /home/media/downloads:/data
+      - /home/media/data:/data
 
   dlna:
     container_name: 'minidlna'
@@ -30,4 +30,4 @@ services:
       - 8200:8200
     #  - 1900:1900/udp
     volumes:
-      - /home/media/downloads/complete:/media
+      - /home/media/data/complete:/media
