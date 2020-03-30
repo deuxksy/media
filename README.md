@@ -38,7 +38,6 @@ Verifying - Password: ${password}
 Password was generated for the http user: torrent
 ```
 
-~~~
 ## [minidlna](https://github.com/vladgh/docker_base_images/tree/master/minidlna)
 
 설치시 문재 발생
@@ -71,4 +70,3 @@ docker run -it -p 139:139 -p 445:445 --name smb -d dperson/samba -p \
             -u "${user};{password}" \
             -s "example1 private share;/example1;yes;no;no;{user}"
 ```
-~~~
