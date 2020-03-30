@@ -40,7 +40,9 @@ Password was generated for the http user: torrent
 
 ## [minidlna](https://github.com/vladgh/docker_base_images/tree/master/minidlna)
 
-설치시 문재 발생
+테스트 까지는 해보았지만 미사용  
+
+설치시 경고 문구 발생 
 
 ```bash
 minidlna   | monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [3] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
@@ -62,8 +64,11 @@ fs.inotify.max_user_watches=65536
 
 ## [samba](https://github.com/dperson/samba)
 
-samba 사용자 생성 하면서 시작 하기
-docker 단독 실행시 -p 로 시작 하는 인자값을 넘기는 것을 docker-compose 에서는 어떻게 하는지 확인 해서 아래와 같이 실행 해보자
+테스트 까지는 해보았지만 미사용  
+
+samba 사용자 생성 하면서 시작 하기  
+docker 단독 실행시 -p 로 시작 하는 인자값을 넘기는 것을 
+[docker-compose](https://github.com/dperson/samba/wiki/Using-Docker-Compose) 에서는 어떻게 하는지 확인 해서 아래와 같이 실행 해보자
 
 ```bash
 docker run -it -p 139:139 -p 445:445 --name smb -d dperson/samba -p \
