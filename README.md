@@ -37,6 +37,9 @@ Password: ${password}
 Verifying - Password: ${password}
 Password was generated for the http user: torrent
 ```
+rtorrent 버그로 인해서 Caught internal_error: Error calling curl_multi_socket_action. 오류 발생
+가끔가다가 죽내... 하아... 다른 모듈로 바꿔볼깡...
+
 
 ## [minidlna](https://github.com/vladgh/docker_base_images/tree/master/minidlna)
 
