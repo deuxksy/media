@@ -5,6 +5,7 @@ services:
   torrent:
     container_name: 'rutorrent'
     image: mondedie/rutorrent:latest
+    restart: always
     environment:
       TZ: 'Asia/Seoul'
       UID: 1000
